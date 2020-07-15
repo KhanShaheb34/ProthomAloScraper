@@ -40,14 +40,14 @@ def get_article_by_id(id):
   return article_dict
 
 articles = []
-write=10
+write_interval=10
 header=True
 
 for id in range(start, end):
   article = get_article_by_id(id)
   if article != -1:
     articles.append(article)
-  if id % write == 0:
+  if id % write_interval == 0:
     dataframe = pd.DataFrame(articles)
     dataframe.to_csv(f"{filename}.csv", index=False, mode="a", header=header)
     header=False
