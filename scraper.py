@@ -4,7 +4,7 @@ import argparse
 import sys
 import pandas as pd
 
-parser = argparse.ArgumentParser(prog="python scrap.py", description='Scrap articles from Prothom Alo')
+parser = argparse.ArgumentParser(prog="python scraper.py", description='Scrape articles from Prothom Alo')
 parser.add_argument('start', type=int, help='Starting article ID from Prothom Alo')
 parser.add_argument('end', type=int, help='Ending article ID from Prothom Alo')
 parser.add_argument('filename', help='Filename for the csv file')
