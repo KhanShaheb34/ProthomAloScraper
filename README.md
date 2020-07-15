@@ -1,14 +1,14 @@
-# ProthomAloScrapper
-A python script to scrap all article from Prothom Alo
+# ProthomAloScraper
+A python script to scrape all article from Prothom Alo
 
 To get help run:
-`python scrap.py -h` or `python scrap.py --help`
+`python scraper.py -h` or `python scraper.py --help`
 
 Documentation:
 ```
-usage: python scrap.py [-h] start end filename
+usage: python scraper.py [-h] start end filename
 
-Scrap articles from Prothom Alo
+Scrape articles from Prothom Alo
 
 positional arguments:
   start       Starting article ID from Prothom Alo
@@ -19,4 +19,4 @@ optional arguments:
   -h, --help  show this help message and exit
 ```
 
-Give an starting id, ending id and a filename, the script will scrap all the articles from given ID and save them to filename.csv
+Give an starting id, ending id and a filename, the script will scrape all the articles from given ID and save them to filename.csv
