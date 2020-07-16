@@ -36,6 +36,7 @@ def get_article_by_id(id):
         break
       paragraphs.append(p.text)
     article = ' '.join(paragraphs)
+    article = article.replace('\n', ' ')
     article_dict = {
         "url": url,
         "category": category,
